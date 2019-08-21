@@ -1,5 +1,5 @@
 # jib-harbor-demo
-Compile java projects using jib-maven-plugin as docker image, then pushing it to customized harbor registry
+## Compile java projects using jib-maven-plugin as docker image, then pushing it to customized harbor registry
 
 1. HelloWorld.java
 ```java
@@ -100,7 +100,7 @@ mvn compile jib:build -DsendCredentialsOverHttp=true
 docker run --rm -p 8080:8080 registryAddress/imageProjectName/imageName:${project.version}
 ```
 
-Compile spring boot projects using jib-maven-plugin as docker image, then run
+## Compile spring boot projects using jib-maven-plugin as docker image, then run
 
 1. HelloWorld.java
 ```java
